@@ -1,14 +1,21 @@
 $(document).ready(function(){
-  $('.cardinfo').hide();
 
 
-  $('.prjimg').hover(function(){
-    $(this).siblings('div').fadeIn();
-  });
+  if ($(window).width() > 769){
+    $('.cardinfo').hide();
 
-  $('.cardinfo').mouseleave(function(){
-    $('.cardinfo').fadeOut();
+    $('.prjimg').hover(function(){
+      $(this).siblings('div').fadeIn();
     });
+    
+    $('.cardinfo').mouseleave(function(){
+      $('.cardinfo').fadeOut();
+      });
+
+  };
+
+
+
 
   $('#fun').click(function(){
     $('#meow').get(0).play();
