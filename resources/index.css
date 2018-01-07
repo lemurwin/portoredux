@@ -1,8 +1,15 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 .navbar{
   margin-top:30px;
   margin-bottom:40px;
   border:none;
   background-color: white;
+}
+nav{
+  font-size: 110%;
 }
 .jumbotron{
   background-color:white;
@@ -10,9 +17,10 @@
 .jumbotron h1{
   font-weight:lighter;
   font-size:50pt;
+  font-weight:100;
 }
 .jumbotron h2{
-  font-weight:lighter;
+  font-weight:300;
 }
 
 .prjimg{
@@ -33,6 +41,12 @@
   height:100%;
   color:white;
 
+
+}
+.cardinfo h3{
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right:5%;
 }
 .nav>li:hover{
   background-color:#e6e6e6;
@@ -64,6 +78,7 @@
   height:30px;
   font-size: 12px;
 }
+
 .fullscreen {
   position: fixed;
   top: 0;
@@ -80,9 +95,65 @@
   padding-top:5px;
   padding-bottom:10px;
   font-weight:lighter;
+  margin-top:15px;
+}
+.subheading1{
+  background-color:#386aff;
+  color:white;
+  padding-top:5px;
+  padding-bottom:10px;
+  font-weight:lighter;
+  margin-top:15px;
+}
+.subheading2{
+  background-color:#D95B00;
+  color:white;
+  padding-top:5px;
+  padding-bottom:10px;
+  font-weight:lighter;
+  margin-top:15px;
 }
 
 p{
   margin-top:10px;
   margin-bottom:10px;
+}
+footer{
+  padding-top:25px;
+}
+footer a{
+  color:black;
+}
+footer .col-xs-4{
+  padding-top: 15px;
+}
+
+@media only screen and (min-width:769px) {
+  p{
+    font-size:130%;
+  }
+  footer p{
+    font-size:100%;
+  }
+}
+@media only screen and (max-width:768px){
+
+  p{
+    font-size:120%;
+  }
+  footer p{
+    font-size:100%;
+  }
+
+  .cardinfo {
+    font-size:150%;
+  }
+}
+@media only screen and (max-width:992px){
+  .cardinfo  p {
+    font-size:90%;
+  }
+  .cardinfo h3{
+    font-size:140%;
+  }
 }
